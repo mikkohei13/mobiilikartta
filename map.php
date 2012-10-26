@@ -2,15 +2,12 @@
 
 /*
 
-DÅVITS
-
-http://www.luomus.fi/projects/mmlmap/kapsi.php?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&BGCOLOR=0xffffff&STYLES=painovari&WIDTH=500&HEIGHT=500&SRS=EPSG:3067&TRANSPARENT=false&LAYERS=peruskartta&FORMAT=image/png&L_CSYSTEM=decimal&L_CENTER_LAT=60.085&L_CENTER_LON=24.600&L_RADIUS=500
-
-http://www.luomus.fi/temp/mmlmap/map.php?LAT=61.000&LON=25.000&RADIUS=1500&WIDTH=500&HEIGHT=500
+Esimerkki:
+.../map.php?STYLE=peruskartta&LAT=61.000&LON=25.000&RADIUS=1500&WIDTH=500&HEIGHT=500&CROSSHAIR
 
 */
 
-// -------------------------------------------------------------------------------------------
+// ----------------------------------------------
 // Functions
 
 function getParameter($name)
@@ -41,8 +38,8 @@ $request = "GetMap";
 $bgcolor = "0xffffff";
 $srs = "EPSG:3067";
 $transparent = "false";
-$bbox = "";
 $format = "image/png";
+$bbox = "";
 
 $width = getParameter('WIDTH');
 $height = getParameter('HEIGHT');
@@ -70,26 +67,15 @@ $coord = json_decode($json, TRUE);
 // Generate bounding box
 $bbox = ($coord['E'] - $radius) . "," . ($coord['N'] - $radius) . "," . ($coord['E'] + $radius) . "," . ($coord['N'] + $radius);
 
+// ----------------------------------------------
+// Get map & send to UA
 
-// -------------------------------------------------------------------------------------------
-// Get map from MML & send to UA
-
-
-// MML
-//$url = "http://tiles.kartat.kapsi.fi/peruskartta?SERVICE=$service&VERSION=$version&REQUEST=$request&BGCOLOR=$bgcolor&WIDTH=$width&HEIGHT=$height&SRS=$srs&TRANSPARENT=$transparent&BBOX=$bbox&LAYERS=$layers&FORMAT=$format";
 
 // KAPSI
 $url = "http://tiles.kartat.kapsi.fi/$style?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&WIDTH=$width&HEIGHT=$height&SRS=EPSG:3067&BBOX=$bbox&FORMAT=image/png";
 
-//echo "<p>"; print_r ($url); exit();
+//echo "<p>"; print_r ($url); exit(); // debug
 
-
-/*
-
-
-header('Content-type: image/png');    	
-readfile($url);
-*/
 
 $mapData = file_get_contents($url);
 $im = imagecreatefromstring($mapData);
