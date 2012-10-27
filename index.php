@@ -1,95 +1,73 @@
-<?php
-$title = "Mobile map - Kotka";
-$description = "Museum specimen management system.";
-$head_editable = "<link href=\"/0/_css/style_mobi.css\" rel=\"stylesheet\" />";
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+	<meta charset="utf-8" />
+	<title>Mobiilikartta</title>
+	<meta name="description" content="HTML5 peruskarttaselain" />
+	<link href="style.css" rel="stylesheet" />
+	<script type="text/javascript" src="../include/jquery.js"></script>
 
-	// ---------------------------------------------------------------------------------------- 
-	// CONTENT
-
-?>	
+</head>
+<body>
+	
 	<p id="maininfo">Sijaintia ei voi päivittää tiheämmin kuin minuutin välein.</p>
 
 	<p>
-	<img src="/0/startmap.png" id="map" alt="" />
-	<br />
-	<span id="statusinfo"></span>
+		<img src="/0/startmap.png" id="map" alt="" />
+		<br />
+		<span id="statusinfo"></span>
 	</p>
 	
 
 	<p id="map_links">
 	
-	<span id="map_links_1" class="map_link_group">
-	<a href="#" id="updatemap">Hae uusi sijainti</a>
-	</span>
+		<span id="map_links_1" class="map_link_group">
+		<a href="#" id="updatemap">Hae uusi sijainti</a>
+		</span>
 
-	<span id="map_links_2" class="map_link_group">
-	<a href="#" id="map_peruskartta">Perus</a>
-	<a href="#" id="map_ortokuva">Orto</a>
-	<a href="#" id="map_vaaravari">Vääräväri</a>
-	</span>
-	
-	<span id="map_links_3" class="map_link_group">
-	<a href="#" id="map_korkeuskayrat">Kork</a>
-	<a href="#" id="map_vesistot">Vesi</a>
-	<a href="#" id="map_pellot">Pelto</a>
-	<a href="#" id="map_suot">Suo</a>
-	</span>
+		<span id="map_links_2" class="map_link_group">
+		<a href="#" id="map_peruskartta">Perus</a>
+		<a href="#" id="map_ortokuva">Orto</a>
+		<a href="#" id="map_vaaravari">Vääräväri</a>
+		</span>
+		
+		<span id="map_links_3" class="map_link_group">
+		<a href="#" id="map_korkeuskayrat">Kork</a>
+		<a href="#" id="map_vesistot">Vesi</a>
+		<a href="#" id="map_pellot">Pelto</a>
+		<a href="#" id="map_suot">Suo</a>
+		</span>
 
-	<span id="map_links_4" class="map_link_group">
-	<a href="#" id="map_kalliot">Kallio/hiekka</a>
-	<a href="#" id="map_avohakkuut">Avohakk</a>
-	<a href="#" id="map_liikenne">Liikenne</a>
-	</span>
+		<span id="map_links_4" class="map_link_group">
+		<a href="#" id="map_kalliot">Kallio/hiekka</a>
+		<a href="#" id="map_avohakkuut">Avohakk</a>
+		<a href="#" id="map_liikenne">Liikenne</a>
+		</span>
 
-	<span id="map_links_5" class="map_link_group">
-	<a href="#" id="map_rakennukset">Rakennus</a>
-	<a href="#" id="map_kiinteistorajat">Kiinteistö</a>
-	<a href="#" id="map_tienimet">Tienimet</a>
-	</span>
+		<span id="map_links_5" class="map_link_group">
+		<a href="#" id="map_rakennukset">Rakennus</a>
+		<a href="#" id="map_kiinteistorajat">Kiinteistö</a>
+		<a href="#" id="map_tienimet">Tienimet</a>
+		</span>
 
-	<span id="map_links_6" class="map_link_group">
-	<a href="#" id="map_radius250">0,5 km</a>
-	<a href="#" id="map_radius500">1 km</a>
-	<a href="#" id="map_radius1000">2 km</a>
-	<a href="#" id="map_radius2000">4 km</a>
-	</span>
-	
-	<span id="map_links_7" class="map_link_group">
-	<a href="#" id="map_compress">Low quality</a>
-	<a href="#" id="map_uncompress">Full quality</a>
-	</span>
+		<span id="map_links_6" class="map_link_group">
+		<a href="#" id="map_radius250">0,5 km</a>
+		<a href="#" id="map_radius500">1 km</a>
+		<a href="#" id="map_radius1000">2 km</a>
+		<a href="#" id="map_radius2000">4 km</a>
+		</span>
+		
+		<span id="map_links_7" class="map_link_group">
+		<a href="#" id="map_compress">Low quality</a>
+		<a href="#" id="map_uncompress">Full quality</a>
+		</span>
 
 	</p>
-	
-	
-	
-<form name="notesform" id="notesform" action="javascript:;">
-<p>
-    <textarea name="notesarea" id="notesarea"></textarea>
-</p>
-<p>
-	<a href="#" id="noteslink" class="buttonlike">Save note</a>
-</p>
-<p id="notesinfo"></p>
-</form>
-	
-	
 	
 	
 	<div id="debug">&nbsp;</div>
 
 
-	</div><!-- #d-main ENDS -->
-<?php
-	// ---------------------------------------------------------------------------------------- 
-	// FOOTER
-
-	// copyright-tekstit
-	$footer_editable = "";
-
-	include "include/footMinimal.php";
-	
-?>
 
 <script type="text/javascript">
 // -------------------------------------------
@@ -396,3 +374,5 @@ $('#noteslink').click(function () {
 <?php
 
 ?>
+</body>
+</html>
