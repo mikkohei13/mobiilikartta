@@ -13,7 +13,7 @@
 	<p id="maininfo">Sijaintia ei voi päivittää tiheämmin kuin minuutin välein.</p>
 
 	<p>
-		<img src="/0/startmap.png" id="map" alt="" />
+		<img src="startMap.png" id="map" alt="" />
 		<br />
 		<span id="statusinfo"></span>
 	</p>
@@ -28,7 +28,7 @@
 		<span id="map_links_2" class="map_link_group">
 		<a href="#" id="map_peruskartta">Perus</a>
 		<a href="#" id="map_ortokuva">Orto</a>
-		<a href="#" id="map_vaaravari">Tausta</a>
+		<a href="#" id="map_taustakartta">Tausta</a>
 		</span>
 		
 		<span id="map_links_6" class="map_link_group">
@@ -39,8 +39,8 @@
 		</span>
 		
 		<span id="map_links_7" class="map_link_group">
-		<a href="#" id="map_compress">Low quality</a>
-		<a href="#" id="map_uncompress">Full quality</a>
+		<a href="#" id="map_compress">Matala laatu</a>
+		<a href="#" id="map_uncompress">Hyvä laatu</a>
 		</span>
 
 	</p>
@@ -130,10 +130,14 @@ function fail()
 function setMap()
 {
 	$('#statusinfo').text("Ladataan karttaa...");
-	$('#debug').append("<p>Ladataan karttaa..."+getTimeText());
 	
-	mapUrl = 'http://www.luomus.fi/projects/mmlmap/?L_STYLE='+window.style+'&WIDTH=1000&HEIGHT=1000&L_CSYSTEM=decimal&L_CENTER_LAT='+window.lat+'&L_CENTER_LON='+window.lon+'&L_RADIUS='+window.radius+'&L_FEATURES=crosshair&L_COMPRESS='+window.compress;
-//	$('#debug').text("debug: "+mapUrl);
+	mapUrl = 'map.php?STYLE='+window.style+'&WIDTH=1000&HEIGHT=1000&LAT='+window.lat+'&LON='+window.lon+'&RADIUS='+window.radius+'&CROSSHAIR';
+	if (1 == window.compress)
+	{
+		mapUrl = mapUrl + "&COMPRESS"
+	}	
+	
+	$('#debug').append("<p>Ladataan karttaa "+mapUrl+" "+getTimeText());
 
 	$('#map').attr("src", mapUrl).load(function() {
 		$('#map').removeClass("fade");
@@ -181,9 +185,9 @@ $('#map_ortokuva').click(function () {
 	$('#debug').append("<p>Klikattu "+getTimeText());
 	initGeolocation();
 });
-$('#map_vaaravari').click(function () {
+$('#map_taustakartta').click(function () {
 	window.positionRequested = true;
-	window.style = 'vaaravari';
+	window.style = 'taustakartta';
 	$('#debug').append("<p>Klikattu "+getTimeText());
 	initGeolocation();
 });

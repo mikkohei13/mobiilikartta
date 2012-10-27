@@ -8,10 +8,6 @@ body {
 	text-align: justify;
 }
 
-#map {
-	border: 1px solid #333;
-}
-
 .map_link_group {
 	display: block;
 	margin: 0 0 3em 0;
@@ -36,13 +32,6 @@ body {
 	border: 5px solid #910024;
 }
 
-#map_links_3 a,
-#map_links_4 a,
-#map_links_5 a {
-	background-color: #C06000;
-	border: 5px solid #912400;
-}
-
 #map_links_6 a {
 	background-color: #0060C0;
 	border: 5px solid #002491;
@@ -50,20 +39,6 @@ body {
 
 .fade {
 	opacity: 0.5;
-}
-
-#notesform p {
-	display: block;
-	clear: both;
-}
-
-#notesarea {
-	width: 90%;
-	height: 100px;
-}
-
-#notessubmit {
-	font-size: 140%;
 }
 
 .buttonlike {
