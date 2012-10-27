@@ -28,28 +28,9 @@
 		<span id="map_links_2" class="map_link_group">
 		<a href="#" id="map_peruskartta">Perus</a>
 		<a href="#" id="map_ortokuva">Orto</a>
-		<a href="#" id="map_vaaravari">Vääräväri</a>
+		<a href="#" id="map_vaaravari">Tausta</a>
 		</span>
 		
-		<span id="map_links_3" class="map_link_group">
-		<a href="#" id="map_korkeuskayrat">Kork</a>
-		<a href="#" id="map_vesistot">Vesi</a>
-		<a href="#" id="map_pellot">Pelto</a>
-		<a href="#" id="map_suot">Suo</a>
-		</span>
-
-		<span id="map_links_4" class="map_link_group">
-		<a href="#" id="map_kalliot">Kallio/hiekka</a>
-		<a href="#" id="map_avohakkuut">Avohakk</a>
-		<a href="#" id="map_liikenne">Liikenne</a>
-		</span>
-
-		<span id="map_links_5" class="map_link_group">
-		<a href="#" id="map_rakennukset">Rakennus</a>
-		<a href="#" id="map_kiinteistorajat">Kiinteistö</a>
-		<a href="#" id="map_tienimet">Tienimet</a>
-		</span>
-
 		<span id="map_links_6" class="map_link_group">
 		<a href="#" id="map_radius250">0,5 km</a>
 		<a href="#" id="map_radius500">1 km</a>
@@ -188,7 +169,6 @@ $('#updatemap').click(function () {
 });
 
 
-
 $('#map_peruskartta').click(function () {
 	window.positionRequested = true;
 	window.style = 'peruskartta';
@@ -208,67 +188,6 @@ $('#map_vaaravari').click(function () {
 	initGeolocation();
 });
 
-
-$('#map_vesistot').click(function () {
-	window.positionRequested = true;
-	window.style = 'vesistot';
-	$('#debug').append("<p>Klikattu "+getTimeText());
-	initGeolocation();
-});
-$('#map_korkeuskayrat').click(function () {
-	window.positionRequested = true;
-	window.style = 'korkeuskayrat';
-	$('#debug').append("<p>Klikattu "+getTimeText());
-	initGeolocation();
-});
-$('#map_pellot').click(function () {
-	window.positionRequested = true;
-	window.style = 'pellot';
-	$('#debug').append("<p>Klikattu "+getTimeText());
-	initGeolocation();
-});
-$('#map_suot').click(function () {
-	window.positionRequested = true;
-	window.style = 'suot';
-	$('#debug').append("<p>Klikattu "+getTimeText());
-	initGeolocation();
-});
-$('#map_kalliot').click(function () {
-	window.positionRequested = true;
-	window.style = 'kalliot';
-	$('#debug').append("<p>Klikattu "+getTimeText());
-	initGeolocation();
-});
-$('#map_avohakkuut').click(function () {
-	window.positionRequested = true;
-	window.style = 'avohakkuut';
-	$('#debug').append("<p>Klikattu "+getTimeText());
-	initGeolocation();
-});
-$('#map_liikenne').click(function () {
-	window.positionRequested = true;
-	window.style = 'liikenne';
-	$('#debug').append("<p>Klikattu "+getTimeText());
-	initGeolocation();
-});
-$('#map_rakennukset').click(function () {
-	window.positionRequested = true;
-	window.style = 'rakennukset';
-	$('#debug').append("<p>Klikattu "+getTimeText());
-	initGeolocation();
-});
-$('#map_kiinteistorajat').click(function () {
-	window.positionRequested = true;
-	window.style = 'kiinteistorajat';
-	$('#debug').append("<p>Klikattu "+getTimeText());
-	initGeolocation();
-});
-$('#map_tienimet').click(function () {
-	window.positionRequested = true;
-	window.style = 'tienimet';
-	$('#debug').append("<p>Klikattu "+getTimeText());
-	initGeolocation();
-});
 
 $('#map_radius250').click(function () {
 	window.positionRequested = true;
