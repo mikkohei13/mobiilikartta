@@ -129,17 +129,7 @@ function success(position)
 	//	$('#statusinfo').text(url);
 		
 		setMap();
-		saveNote(true);
-		
-		
-		// Log
-		$.ajax({
-		  type: "POST",
-		  url: "/ajax/mobicoord_log",
-		  data: { lat: window.lat, lon: window.lon, acc : window.acc, alt: window.alt, altAcc: window.altAcc, style: window.style, radius: window.radius }
-		}).done(function( msg ) {
-			$('#debug').append("<p>Logged " + msg + ". " + getTimeText());
-		});
+
 	}
 }
 function fail()
@@ -151,34 +141,9 @@ function fail()
 		$('#debug').append("<p>Sijainnin päivitys epäonnistui. Näytetään vanha sijainti ajalta "+window.timeText+". "+getTimeText());
 
 		setMap();
-		saveNote(false);
 		
 		//	$('#debug').text("Sorry, obtaining location from your browser failed. Please try again in a few minutes.");
 	}
-}
-
-function saveNote(positionStatus)
-{
-	if (true == window.save)
-	{
-		// Save note
-		$.ajax({
-		  type: "POST",
-		  url: "/ajax/post_notes",
-		  data: { note: window.notestext, lat: window.lat, lon: window.lon, acc : window.acc, alt: window.alt, altAcc: window.altAcc, style: window.style, radius: window.radius, freshPosition: positionStatus }
-		}).done(function( msg ) {
-			$('#debug').append("<p>Note sent with AJAX, new coordinates " + msg + ". " + getTimeText());
-		});
-	}
-	else
-	{
-		$('#debug').append("<p>Nothing to save " + window.save + getTimeText());
-	}
-
-	// Clear global vars
-	window.save = false;
-	window.notestext = '';
-
 }
 
 function setMap()
@@ -341,32 +306,6 @@ $('#map_uncompress').click(function () {
 	window.compress = 0;
 	$('#debug').append("<p>Klikattu "+getTimeText());
 	initGeolocation();
-});
-
-// -------------------------------------------
-// Buttons
-
-// Ongelma: geolocation ei ehdi hakea uusia kooridnaatteja, ennen kuin note tallennetaan
-
-$('#noteslink').click(function () {
-
-	// Get notes
-	window.notestext = $('textarea#notesarea').val();
-	$('textarea#notesarea').val('');
-	notesextract = notestext.substring(0, 25);
-
-	$('#debug').append("<p>Getting coordinates and saving the note "+getTimeText());
-	
-	// Geolocation and save
-	window.save = true;
-	window.positionRequested = true;
-	initGeolocation();
-	
-	// Info text
-	$("#maininfo").text("Note saved (" + notesextract + "...)").show().fadeOut(5000);
-	$('#debug').append("<p>Note saved "+getTimeText());
-
-	return true;
 });
 
 </script>
