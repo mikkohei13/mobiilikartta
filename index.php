@@ -32,7 +32,7 @@
 		</span>
 		
 		<span id="map_links_6" class="map_link_group">
-		<a href="#" id="map_radius250">0,5 km</a>
+<!--		<a href="#" id="map_radius250">0,5 km</a> -->
 		<a href="#" id="map_radius500">1 km</a>
 		<a href="#" id="map_radius1000">2 km</a>
 		<a href="#" id="map_radius2000">4 km</a>
@@ -53,16 +53,11 @@
 
 <script type="text/javascript">
 // -------------------------------------------
-// Main program
 
-// Basic vars
 window.style = 'peruskartta';
 window.radius = '1000';
 window.compress = '1';
-//window.maximumAge = 60000; // milliseconds
-
 window.positionRequested = false;
-
 
 // Fetches coordinates from browser
 function initGeolocation()
@@ -102,16 +97,10 @@ function success(position)
 		window.alt = position.coords.altitude;
 		window.altAcc = position.coords.altitudeAccuracy;
 
-		// Stop listening
-	//	geolocation.clearWatch(window.watchId);
-
 		var url;
 		url = '/mobi/mobicoordmap?n=' + position.coords.latitude + '&e=' + position.coords.longitude + '&r=' + position.coords.accuracy + '&alt=' + position.coords.altitude + '&alta=' + position.coords.altitudeAccuracy;
-
-	//	$('#statusinfo').text(url);
 		
 		setMap();
-
 	}
 }
 function fail()
@@ -123,8 +112,6 @@ function fail()
 		$('#debug').append("<p>Sijainnin päivitys epäonnistui. Näytetään vanha sijainti ajalta "+window.timeText+". "+getTimeText());
 
 		setMap();
-		
-		//	$('#debug').text("Sorry, obtaining location from your browser failed. Please try again in a few minutes.");
 	}
 }
 
@@ -146,7 +133,6 @@ function setMap()
 		$('#statusinfo').text("Sijainti päivitetty kartalle klo "+window.timeText+". Tarkkuus "+window.acc+" metriä");
 		$('#debug').append("<p>Sijainti päivitetty kartalle klo "+window.timeText+". Tarkkuus "+window.acc+" metriä "+getTimeText());
 	});
-
 }
 
 function getTimeText()
