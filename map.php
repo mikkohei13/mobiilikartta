@@ -2,10 +2,6 @@
 
 /*
 
-http://www.luomus.fi/projects/coordinateservice/json/?from=WGS84&to=YKJ&n=60.123&e=24.123
-
-
-
 Esimerkki:
 .../map.php?STYLE=peruskartta&LAT=61.000&LON=25.000&RADIUS=1500&WIDTH=500&HEIGHT=500&CROSSHAIR
 

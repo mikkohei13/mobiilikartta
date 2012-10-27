@@ -1,6 +1,11 @@
 
 body {
+	font-family: Arial, Helvetica, sans-serif;
 	font-size: 140%;
+}
+
+#debug {
+	display: none;
 }
 
 #map_links {
@@ -53,3 +58,5 @@ body {
 	border-radius: 0.25em;
 	margin-top: 2.5em;
 }
+
+

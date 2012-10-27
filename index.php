@@ -14,9 +14,9 @@
 
 	<p>
 		<img src="startMap.png" id="map" alt="" />
-		<br />
-		<span id="statusinfo"></span>
 	</p>
+		
+	<p id="statusinfo">&nbsp;</p>
 	
 
 	<p id="map_links">
@@ -48,6 +48,7 @@
 	
 	<div id="debug">&nbsp;</div>
 
+	<p id="license">Sovellus: <a href="http://www.biomi.org/">Mikko Heikkinen, biomi.org</a> (<a href="https://github.com/mikkohei13/mobiilikartta">Github</a>), kartat: <a href="https://github.com/mikkohei13/mobiilikartta/blob/master/LICENSE.md">Maanmittauslaitos 2012</a></p>
 
 
 <script type="text/javascript">
@@ -233,8 +234,5 @@ $('#map_uncompress').click(function () {
 
 </script>
 
-<?php
-
-?>
 </body>
 </html>
