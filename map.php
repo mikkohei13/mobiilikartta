@@ -59,7 +59,7 @@ else
 // ----------------------------------------------
 // Coordinates
 
-// Muunnos wgs84 -> trs-tm35fin, k‰ytt‰‰ Luomuksen avointa muunnospalvelua
+// Muunnos wgs84 -> trs-tm35fin, k√§ytt√§√§ Luomuksen avointa muunnospalvelua
 // http://www.luomus.fi/projects/coordinateservice/info/
 $url = "http://www.luomus.fi/projects/coordinateservice/json/?from=WGS84&to=ETRS-TM35FIN&n=$lat&e=$lon";
 $json = file_get_contents($url);

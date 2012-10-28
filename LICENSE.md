@@ -14,53 +14,53 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 Kartat / Maps
 =============
 
-# Käyttöehdot
+# KÃ¤yttÃ¶ehdot
 Maanmittauslaitoksen avoimen tietoaineiston lisenssi, versio 1.0, 1.5.2012
 
-## Yleistä
-Maanmittauslaitos (jäljempänä Lisenssinantaja) on tietoaineiston immateriaalioikeuksien haltijana myöntänyt lisenssin tietoaineiston (tai sen osan) kopioon (jäljempänä aineisto) näiden käyttöehtojen mukaan.
+## YleistÃ¤
+Maanmittauslaitos (jÃ¤ljempÃ¤nÃ¤ Lisenssinantaja) on tietoaineiston immateriaalioikeuksien haltijana myÃ¶ntÃ¤nyt lisenssin tietoaineiston (tai sen osan) kopioon (jÃ¤ljempÃ¤nÃ¤ aineisto) nÃ¤iden kÃ¤yttÃ¶ehtojen mukaan.
 
-Lisenssinsaajalla tarkoitetaan luonnollista tai juridista henkilöä, joka ottaa tämän lisenssin alaisen aineiston käyttöön. Vastaanottamalla aineiston Lisenssinsaaja hyväksyy tämän lisenssin ehdot.
+Lisenssinsaajalla tarkoitetaan luonnollista tai juridista henkilÃ¶Ã¤, joka ottaa tÃ¤mÃ¤n lisenssin alaisen aineiston kÃ¤yttÃ¶Ã¶n. Vastaanottamalla aineiston Lisenssinsaaja hyvÃ¤ksyy tÃ¤mÃ¤n lisenssin ehdot.
 
-Lisenssinsaajan ja Lisenssinantajan välillä ei tämän lisenssin myötä synny yhteistyö- tai liikesuhdetta.
+Lisenssinsaajan ja Lisenssinantajan vÃ¤lillÃ¤ ei tÃ¤mÃ¤n lisenssin myÃ¶tÃ¤ synny yhteistyÃ¶- tai liikesuhdetta.
 
 ## Lisenssin ehdot
 
-### Käyttöoikeudet
+### KÃ¤yttÃ¶oikeudet
 
-Tämä on maailmanlaajuisen, maksuttoman, peruuttamattoman rinnakkaisen käyttöoikeuden myöntävä lisenssi, jonka mukaan Lisenssinsaajan vastaanottamaa aineistoa voi vapaasti:
+TÃ¤mÃ¤ on maailmanlaajuisen, maksuttoman, peruuttamattoman rinnakkaisen kÃ¤yttÃ¶oikeuden myÃ¶ntÃ¤vÃ¤ lisenssi, jonka mukaan Lisenssinsaajan vastaanottamaa aineistoa voi vapaasti:
 
-- kopioida, levittää ja julkaista,
-- muokata ja hyödyntää kaupallisesti ja ei-kaupallisesti,
-- yhdistellä muihin tuotteisiin ja
-- käyttää osana sovellusta tai palvelua.
+- kopioida, levittÃ¤Ã¤ ja julkaista,
+- muokata ja hyÃ¶dyntÃ¤Ã¤ kaupallisesti ja ei-kaupallisesti,
+- yhdistellÃ¤ muihin tuotteisiin ja
+- kÃ¤yttÃ¤Ã¤ osana sovellusta tai palvelua.
 
 ### Lisenssinsaajan velvollisuudet ja vastuut
 
-Lisenssinsaajan on aineistoa levittäessään tai aineistoa sisältävän tuotteen tai aineistoa käyttävän palvelun yhteydessä käytettyyn jakelumediaan tai -menetelmään kohtuullisesti soveltuvalla tavalla:
+Lisenssinsaajan on aineistoa levittÃ¤essÃ¤Ã¤n tai aineistoa sisÃ¤ltÃ¤vÃ¤n tuotteen tai aineistoa kÃ¤yttÃ¤vÃ¤n palvelun yhteydessÃ¤ kÃ¤ytettyyn jakelumediaan tai -menetelmÃ¤Ã¤n kohtuullisesti soveltuvalla tavalla:
 
-- mainittava Lisenssinantajan nimi, aineiston nimi ja ajankohta, jolloin Maanmittauslaitos on luovuttanut aineiston (esimerkiksi: sisältää Maanmittauslaitoksen Maastotietokannan 06/2012 aineistoa)
-- esitettävä tämän lisenssin kopio tai linkki siihen, sekä
-- vaadittava vastaavat maininnat luovuttaessaan kolmannelle oikeuksia aineiston kopioihin tai aineistoa sisältäviin tuotteisiin tai palveluihin ja
-- poistettava Lisenssinantajan nimi tuotteen tai palvelun yhteydestä, mikäli Lisenssinantaja sitä vaatii.
+- mainittava Lisenssinantajan nimi, aineiston nimi ja ajankohta, jolloin Maanmittauslaitos on luovuttanut aineiston (esimerkiksi: sisÃ¤ltÃ¤Ã¤ Maanmittauslaitoksen Maastotietokannan 06/2012 aineistoa)
+- esitettÃ¤vÃ¤ tÃ¤mÃ¤n lisenssin kopio tai linkki siihen, sekÃ¤
+- vaadittava vastaavat maininnat luovuttaessaan kolmannelle oikeuksia aineiston kopioihin tai aineistoa sisÃ¤ltÃ¤viin tuotteisiin tai palveluihin ja
+- poistettava Lisenssinantajan nimi tuotteen tai palvelun yhteydestÃ¤, mikÃ¤li Lisenssinantaja sitÃ¤ vaatii.
 
-Tämän lisenssin perusteella Lisenssinsaaja ei saa aineiston käytön yhteydessä ilmaista, että Lisenssinantaja tukisi tai suosittelisi kyseistä aineiston käyttötapaa.
+TÃ¤mÃ¤n lisenssin perusteella Lisenssinsaaja ei saa aineiston kÃ¤ytÃ¶n yhteydessÃ¤ ilmaista, ettÃ¤ Lisenssinantaja tukisi tai suosittelisi kyseistÃ¤ aineiston kÃ¤yttÃ¶tapaa.
 
 ### Lisenssinantajan velvollisuudet ja vastuut
 
-Lisenssinantaja vastaa, että
+Lisenssinantaja vastaa, ettÃ¤
 
-- Lisenssinantajalla on oikeus luovuttaa tämän lisenssin mukaiset oikeudet aineistoon.
+- Lisenssinantajalla on oikeus luovuttaa tÃ¤mÃ¤n lisenssin mukaiset oikeudet aineistoon.
 
-Aineisto on lisensoitu sellaisenaan eikä Lisenssinantaja
+Aineisto on lisensoitu sellaisenaan eikÃ¤ Lisenssinantaja
 
-- vastaa aineistossa mahdollisesti esiintyvistä virheistä, ei myönnä aineiston tai sen osien oikeellisuudelle tai ajantasaisuudelle takuuta eikä vastaa aineiston käytöstä aiheutuvista välittömistä tai välillisistä vahingoista ja
-- ei ole velvollinen pitämään aineistoa jatkuvasti saatavilla eikä ilmoittamaan ennalta jakelun keskeytymisestä tai päättymisestä eikä vastaa jakelun keskeytymisestä tai päättymisestä aiheutuvista välittömistä tai välillisistä vahingoista.
+- vastaa aineistossa mahdollisesti esiintyvistÃ¤ virheistÃ¤, ei myÃ¶nnÃ¤ aineiston tai sen osien oikeellisuudelle tai ajantasaisuudelle takuuta eikÃ¤ vastaa aineiston kÃ¤ytÃ¶stÃ¤ aiheutuvista vÃ¤littÃ¶mistÃ¤ tai vÃ¤lillisistÃ¤ vahingoista ja
+- ei ole velvollinen pitÃ¤mÃ¤Ã¤n aineistoa jatkuvasti saatavilla eikÃ¤ ilmoittamaan ennalta jakelun keskeytymisestÃ¤ tai pÃ¤Ã¤ttymisestÃ¤ eikÃ¤ vastaa jakelun keskeytymisestÃ¤ tai pÃ¤Ã¤ttymisestÃ¤ aiheutuvista vÃ¤littÃ¶mistÃ¤ tai vÃ¤lillisistÃ¤ vahingoista.
 
 ### Sovellettava laki
 
-Tähän lisenssiin sovelletaan Suomen lakia.
+TÃ¤hÃ¤n lisenssiin sovelletaan Suomen lakia.
 
-### Muutokset tähän lisenssiin
+### Muutokset tÃ¤hÃ¤n lisenssiin
 
-Lisenssinantaja voi milloin tahansa muuttaa lisenssin ehtoja tai soveltaa aineistoon eri lisenssiä. Tämän lisenssin ehtoja sovelletaan kuitenkin edelleen niihin aineistoihin, jotka on vastaanotettu ennen lisenssin muuttumista tai vaihtumista.
+Lisenssinantaja voi milloin tahansa muuttaa lisenssin ehtoja tai soveltaa aineistoon eri lisenssiÃ¤. TÃ¤mÃ¤n lisenssin ehtoja sovelletaan kuitenkin edelleen niihin aineistoihin, jotka on vastaanotettu ennen lisenssin muuttumista tai vaihtumista.
