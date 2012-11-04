@@ -5,13 +5,10 @@ body {
 	font-size: 280%;
 }
 
-#map {
-	width: 1000px;
-}
-
 #map_links {
 	margin-top: 1em;
 	text-align: justify;
+	width: 1000px;
 }
 
 .map_link_group {
@@ -30,17 +27,14 @@ body {
 	text-decoration: none;
 	color: #fff !important;
 	background-color: #60C000;
-	border: 5px solid #249100;
 }
 
 #map_links_2 a {
 	background-color: #C00060;
-	border: 5px solid #910024;
 }
 
 #map_links_6 a {
 	background-color: #0060C0;
-	border: 5px solid #002491;
 }
 
 .fade {

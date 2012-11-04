@@ -20,13 +20,9 @@ else
 </head>
 <body>
 	
-	<p id="maininfo">Sijaintia ei voi päivittää tiheämmin kuin minuutin välein.</p>
-
-	<p>
-		<img src="startMap.png" id="map" alt="" />
-	</p>
+	<p><img src="startMap.png" id="map" alt="" /></p>
 		
-	<p id="statusinfo">&nbsp;</p>
+	<p id="statusinfo">Sijaintia ei voi päivittää tiheämmin kuin minuutin välein.</p>
 	
 
 	<p id="map_links">
