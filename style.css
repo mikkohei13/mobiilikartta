@@ -5,8 +5,8 @@ body {
 	font-size: 280%;
 }
 
-#debug {
-	display: none;
+#map {
+	width: 1000px;
 }
 
 #map_links {

@@ -1,3 +1,14 @@
+<?php
+if (isset($_GET['debug']))
+{
+	$debugCSS = "display: block;";
+}
+else
+{
+	$debugCSS = "display: none;";
+}
+
+?>
 <!DOCTYPE html>
 <html lang="fi">
 <head>
@@ -6,7 +17,6 @@
 	<meta name="description" content="HTML5 peruskarttaselain" />
 	<link href="style.css" rel="stylesheet" />
 	<script type="text/javascript" src="../include/jquery.js"></script>
-
 </head>
 <body>
 	
@@ -46,7 +56,7 @@
 	</p>
 	
 	
-	<div id="debug">&nbsp;</div>
+	<div id="debug" style="<?php echo $debugCSS; ?>">&nbsp;</div>
 
 	<p id="license">Sovellus: <a href="http://www.biomi.org/">Mikko Heikkinen, biomi.org</a> (<a href="https://github.com/mikkohei13/mobiilikartta">Github</a>), kartat: <a href="https://github.com/mikkohei13/mobiilikartta/blob/master/LICENSE.md">Maanmittauslaitos 2012</a></p>
 
