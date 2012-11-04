@@ -11,7 +11,9 @@ Karttasivu käyttää jQuerya: aseta polku index.php-tiedostoon.
 Testattu:
 - Android 2.3, perusselain: ok
 - iPad 2, perusselain: ok
-- Nokia 700, perusselain: ei toimi, karttakuva tyhjä ja tarkkuus undefined; ei geolocationia?
+- Nokia 700, perusselain: ei toimi, karttakuva tyhjä ja tarkkuus undefined
+- Nokia Lumia 500, perusselain: ei toimi, karttakuva tyhjä ja tarkkuus undefined
+- Windows Phone Emulator 7.1: ok
 - Chrome 22: ok
 - Firefox 16: ok
 
